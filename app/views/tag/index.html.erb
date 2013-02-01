@@ -1,0 +1,9 @@
+<h1>Tag Index PG</h1>
+
+<ul>
+	<li>
+		<% @tags.each do |t| %>
+			<li><% link_to t.name, tag_path(t), class: 'tag_name', id: "tag_#{t.id}" %></li>
+		<% end %>
+	</li>
+</ul>
